@@ -1,5 +1,7 @@
 import { Footer, Navbar } from "@/components/common";
-import { League_Spartan } from "next/font/google";
+import { Inter } from 'next/font/google'
+import '@/style/global.css';
+
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ["latin"] });
