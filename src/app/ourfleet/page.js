@@ -29,7 +29,7 @@ function OurFleet() {
 
       </div>
       <div class="w-full sm:w-full md:w-full lg:w-1/2">
-        <img src="/ourfleet/exec-suv.png" alt="Dummy Image" class="w-full h-full" />
+        <img src="/ourfleet/MSL.png" alt="Dummy Image" class="w-full h-full" />
       </div>
     </div>
   )
