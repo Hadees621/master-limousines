@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         montserrat: ['Montserrat', 'sans'],
         archivo: ['Archivo', 'sans'],
+        librebaskerville: ['LibreBaskerville', 'serif'],
       },
     },
   },
