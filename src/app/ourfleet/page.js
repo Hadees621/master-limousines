@@ -1,6 +1,7 @@
 import React from 'react';
 import Section from './components/Section';
 import { Footer, Navbar } from '@/components/common';
+import Hero from './components/Hero';
 
 function OurFleet() {
   const sections = [
@@ -82,7 +83,8 @@ function OurFleet() {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
+      <Hero /> 
       {sections.map((section, index) => (
         <Section key={index} order={section.order} textContent={section.textContent} title={section.title} imgURL={section.imgURL} />
       ))}
