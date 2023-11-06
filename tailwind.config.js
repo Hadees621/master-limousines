@@ -13,18 +13,6 @@ module.exports = {
         librebaskerville: ['LibreBaskerville', 'serif'],
         leaguespartan: ['League Spartan', 'sans'],
       },
-      typography: {
-        'custom-li': {
-          color: '#FFF',
-          textShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
-          fontFamily: 'Montserrat',
-          fontSize: '24px',
-          fontStyle: 'italic',
-          fontWeight: '700',
-          letterSpacing: '3.6px',
-          textTransform: 'uppercase',
-        },
-      },
     },
   },
   plugins: [],
