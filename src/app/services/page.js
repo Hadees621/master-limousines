@@ -1,10 +1,13 @@
 import React from 'react'
+import { Footer } from '@/components/common'
+import Hero from './components/Hero'
 
 function Services() {
   return (
-    <h1>
-        Services Page
-    </h1>
+    <>
+      <Hero />
+      {/* <Footer /> */}
+    </>
   )
 }
 
