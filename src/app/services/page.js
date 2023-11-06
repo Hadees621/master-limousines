@@ -7,11 +7,10 @@ function Services() {
   return (
     <>
       <Hero />
-      {/* <Section /> */}
-      {/* <Section />
       <Section />
       <Section />
-      <Section /> */}
+      <Section />
+      <Section />
 
       {/* <Footer /> */}
     </>
