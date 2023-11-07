@@ -88,7 +88,6 @@ function Services() {
           imgURL={section.imgURL}
           color={section.color}
           number={section.number}
-          filled={section.filled}
         />
       ))}
       <Footer />
