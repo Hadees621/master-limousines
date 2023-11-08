@@ -13,6 +13,10 @@ module.exports = {
         librebaskerville: ['LibreBaskerville', 'serif'],
         leaguespartan: ['League Spartan', 'sans'],
       },
+      screens: {
+        '1024': '1023px',
+        // You can add more custom breakpoints here if needed.
+      },
     },
   },
   plugins: [],
