@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Section = ({ order, textContent, title, imgURL, color, number }) => {
+const Section = ({ order, textContent, title, imgURL, color, number, img }) => {
 
     const totalIcons = 17;
 
@@ -14,7 +14,18 @@ const Section = ({ order, textContent, title, imgURL, color, number }) => {
                 <div className={`bg-${color} w-full h-[600px] flex`}>
                     <div className={`flex w-full text-white justify-center items-center  ${order === 'left' ? 'flex-row-reverse pr-12' : 'flex-row pl-12'}`}>
                         <div>
-                            <h1 className={`text-[70px] font-Leaguespartan leading-[76.6%] font-bold mb-1 ${order === 'left' ? 'pl-12' : ''}`}>{`${number}`}</h1>
+                            <div className='grid grid-cols-2'>
+                                <div className='flex justify-start'>
+                                    <h1 className={`flex text-[70px] font-Leaguespartan leading-[76.6%] font-bold mb-1 ${order === 'left' ? 'pl-12' : ''}`}>{`${number}`}</h1>
+                                </div>
+                                <div className='flex justify-end mr-8'>
+                                    <img
+                                        src={`${img}`}
+                                        alt=""
+                                        class="w-[60px] h-[60px]"
+                                    />
+                                </div>
+                            </div>
                             <h1 className={`text-[35px] font-Archivo italic font-[400] mb-1 ${order === 'left' ? 'pl-12' : ''}`}>{`${title}`}</h1>
 
                             <div className={`${order === 'left' ? 'pl-12' : 'pr-10'}`}>

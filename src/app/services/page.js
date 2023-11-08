@@ -15,7 +15,8 @@ const sections = [
       "With our Gold Key Concierge Service, you can expect nothing but the best. Our experienced team of professionals works closely with you to create a customized itinerary that meets your specific needs and preferences. We provide expert advice and recommendations on event planning, entertainment options, restaurant reservations, and more. We strive to exceed your expectations and create an unforgettable travel experience.",
       "At Masterpiece Limousine, we understand that luxury travel should be seamless and stress-free. Our Gold Key Concierge Service is available 24/7 to provide around-the-clock assistance and support. We are dedicated to providing the highest level of service to ensure that your travel experience is smooth and hassle-free. Contact us today to learn more about our Gold Key Concierge Service, and let us help you create an unforgettable travel experience.",
     ],
-    imgURL: "/services/section/01.png"
+    imgURL: "/services/section/01.png",
+    img: "/services/section/s1.png"
   },
   {
     number: '02',
@@ -29,7 +30,8 @@ const sections = [
       "If you're looking for airport transportation in San Diego, we have you covered. Choose from our luxury sedans and SUV’s or the H2 limo for a truly unforgettable experience. Our top priority is your safety and comfort, and we strive to provide a touch of elegance in all our services.",
       "Experience the ultimate in luxury transportation with Masterpiece Limousine.Contact us today for all your travel needs to and from San Diego International Airport.",
     ],
-    imgURL: "/services/section/02.png"
+    imgURL: "/services/section/02.png",
+    img: "/services/section/s2.png"
   },
   {
     number: '03',
@@ -42,7 +44,8 @@ const sections = [
       "Our fleet includes a range of luxurious vehicles, including sedans, SUVs, Luxury Buses, Executive Sprinters, and Sprinter Limos. All our vehicles are meticulously maintained and outfitted with the latest amenities to ensure your comfort and safety. Our experienced drivers are knowledgeable about the area and will get you to your destination on time and in style. We offer competitive pricing and customizable packages to meet your specific needs and budget. Choose Masterpiece Limousine for all your Executive Ground Transportation needs in San Diego.",
       "At Masterpiece Limousine, we understand that executive travel is not just about getting from point A to point B. It's about arriving in style, comfort, and on time. That's why we offer a range of services designed to meet the needs of our corporate clients. From Meet and Greet services to Curbside Pickup, we make sure that your travel experience is smooth and hassle-free. We also offer 24/7 customer support, so you can always reach us if you have any questions or concerns. Trust us to provide the best Executive Ground Transportation services in San Diego.",
     ],
-    imgURL: "/services/section/03.png"
+    imgURL: "/services/section/03.png",
+    img: "/services/section/s3.png"
   },
   {
     number: '04',
@@ -56,7 +59,9 @@ const sections = [
       "At Masterpiece Limousine, we place the utmost priority on safety and reliability.Our vehicles are maintained meticulously and equipped with the latest safety features to guarantee your comfort and peace of mind.We believe that luxury ground transportation should be affordable and customizable to meet your unique needs and budget.",
       "Whether you are traveling for business or pleasure, our transportation services with Meet and Greet and Curbside Service options will get you to your destination in comfort and style.Experience the epitome of luxury ground transportation with Masterpiece Limousine today.Get in touch with us to schedule your next trip.",
     ],
-    imgURL: "/services/section/04.png"
+    imgURL: "/services/section/04.png",
+    img: "/services/section/s4.png"
+
   },
   {
     number: '17',
@@ -71,7 +76,10 @@ const sections = [
       "And if you're looking for transportation for prom night, Masterpiece Limousine has got you covered with our luxury prom limousine service. We offer a wide range of luxury vehicles, including Executive Sprinters and Sprinter Limos, equipped with top-of-the-line amenities to make your prom night special. Our experienced and professional chauffeurs will ensure your prom night is safe, fun, and stress-free.",
       "Contact Masterpiece Limousine today to book our school event or prom limo services and give your child the celebrity treatment they deserve.",
     ],
-    imgURL: "/services/section/17.png"
+    imgURL: "/services/section/17.png",
+    img: "/services/section/s17.png"
+
+
   },
 ];
 
@@ -88,6 +96,7 @@ function Services() {
           imgURL={section.imgURL}
           color={section.color}
           number={section.number}
+          img={section.img}
         />
       ))}
       <Footer />
