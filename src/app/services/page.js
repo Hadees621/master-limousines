@@ -78,7 +78,7 @@ const sections = [
 function Services() {
   return (
     <>
-      {/* <Hero />
+      <Hero />
       {sections.map((section, index) => (
         <Section
           key={index}
@@ -89,7 +89,7 @@ function Services() {
           color={section.color}
           number={section.number}
         />
-      ))} */}
+      ))}
       <Footer />
     </>
   )
