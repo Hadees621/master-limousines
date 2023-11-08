@@ -1,7 +1,7 @@
 
 export default function Footer() {
   return (
-    <footer className="bg-[#16181A]">
+    <footer className="bg-[#16181A] pt-6">
       <div className="sm:align-items-center pb-8">
         <div className="grid grid-cols-1 lg:grid-cols-3">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:col-span-3 lg:grid-cols-5 1024:grid-cols-3 gap-y-10">
