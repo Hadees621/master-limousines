@@ -84,11 +84,11 @@ function OurFleet() {
   return (
     <>
       {/* <Navbar /> */}
-      <Hero /> 
+      {/* <Hero /> */}
       {sections.map((section, index) => (
         <Section key={index} order={section.order} textContent={section.textContent} title={section.title} imgURL={section.imgURL} />
       ))}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
