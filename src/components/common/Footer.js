@@ -4,7 +4,7 @@ export default function Footer() {
     <footer className="bg-[#16181A] pt-6">
       <div className="sm:align-items-center pb-8">
         <div className="grid grid-cols-1 lg:grid-cols-3">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:col-span-3 1024:grid-cols-3 2xl:grid-cols-5 gap-y-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:col-span-3 1024:grid-cols-5 2xl:grid-cols-5 gap-y-10">
             {/* about us */}
             <div className="flex flex-col text-center justify-center h-full px-[25px] gap-y-10">
               <p className="text-[#FFFFFF] text-[20px] font-Montserrat font-[700] uppercase tracking-[3.6px] text-center lg:text-center">About us</p>
@@ -22,7 +22,7 @@ export default function Footer() {
               <p className="text-[#FFFFFF] text-[19px] font-Montserrat font-[700] uppercase tracking-[3.6px]">Services</p>
               <div className='flex justify-center'>
                 <ul className="flex flex-col text-left mt-5 space-y-1 list-inside list-disc whitespace-nowrap">
-                  <li className="font-Archivo text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
+                  <li className="font-Archivo text-[15px] md:text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     Gold Key Concierge
                   </li>
                   <li className="font-Archivo text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
@@ -81,7 +81,7 @@ export default function Footer() {
             </div>
 
             {/* THE FLEET */}
-            <div className="flex flex-col text-center justify-center">
+            <div className="flex flex-col text-center justify-center md:justify-start">
               <p className="text-[#FFFFFF] text-[19px] font-Montserrat font-[700] uppercase tracking-[3.6px]">THE FLEET</p>
               <div className='flex justify-center'>
                 <ul className="flex flex-col text-left mt-5 space-y-1 list-disc list-inside whitespace-nowrap">
@@ -114,7 +114,7 @@ export default function Footer() {
 
             {/* NAVIGATE */}
             <div className="flex flex-col text-center justify-center">
-              <p className="text-[#FFFFFF] text-[19px] font-Montserrat font-[700] uppercase tracking-[3.6px] text-center lg:text-center">NAVIGATE</p>
+              <p className="text-[#FFFFFF] text-[19px] font-Montserrat font-[700] uppercase tracking-[3.6px] text-center">NAVIGATE</p>
               <div className='flex justify-center'>
                 <ul className="flex flex-col text-left mt-5 space-y-1 list-disc list-inside">
                   <li className="font-Archivo text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
@@ -173,8 +173,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div class="grid grid-cols-1 h-full bg-black items-center justify-center gap-y-20 pt-8 pb-2">
-        <div className="flex justify-center">
+      <div class="grid grid-cols-1 md:grid-cols-3  h-full bg-black items-center justify-center gap-y-20 py-4">
+        <div className="flex justify-center md:justify-start">
           <p class="text-[#FFF] font-Montserrat text-[8px] font-semibold uppercase tracking-[1.5px] pl-4">
             © 2001 - 2023 Masterpiece Limousine
           </p>
@@ -182,7 +182,7 @@ export default function Footer() {
         <div className="flex justify-center">
           <img src="/footer/112.png" alt="Logo" class="h-[45px] w-auto"></img>
         </div>
-        <div className="flex justify-center pr-4">
+        <div className="flex justify-center md:justify-end md:pr-4">
           <ul class="flex items-end gap-3">
             <li>
               <a
