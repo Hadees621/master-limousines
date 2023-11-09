@@ -4,88 +4,87 @@ export default function Footer() {
     <footer className="bg-[#16181A] pt-6">
       <div className="sm:align-items-center pb-8">
         <div className="grid grid-cols-1 lg:grid-cols-3">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:col-span-3 lg:grid-cols-5 1024:grid-cols-3 gap-y-10">
-
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:col-span-3 1024:grid-cols-3 2xl:grid-cols-5 gap-y-10">
             {/* about us */}
-            <div className="text-center sm:text-left h-full flex flex-col px-[25px]">
-              {/* <div className=""> */}
+            <div className="flex flex-col text-center justify-center h-full px-[25px] gap-y-10">
               <p className="text-[#FFFFFF] text-[20px] font-Montserrat font-[700] uppercase tracking-[3.6px] text-center lg:text-center">About us</p>
-              <p className="text-[rgba(255,255,255,0.75)] text-opacity-75 font-[400] text-center font-Librebaskerville italic text-[13px] mt-6">
+              <p className="text-[rgba(255,255,255,0.75)] text-opacity-75 font-[400] text-center font-Librebaskerville italic text-[13px]">
                 High-end luxury Limousine services at affordable prices
                 <br />
                 <br />
                 We have been providing exceptional high-end transportation throughout San Diego county for over 22 years.
               </p>
-              {/* </div> */}
               <p className="mb-2 mt-auto text-[rgba(255,255,255,0.75)] text-center font-Archivo text-[14px] font-[700]">License: TCP15412-A</p>
             </div>
 
             {/* Services */}
-            <div className="sm:text-left">
-              <p className="text-[#FFFFFF] text-[19px] font-Montserrat font-[700] uppercase tracking-[3.6px] text-center lg:text-center lg">Services</p>
-              <ul className="mt-5 space-y-1 list-inside list-disc whitespace-nowrap p-2">
-                <li className="font-Archivo text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
-                  Gold Key Concierge
-                </li>
-                <li className="font-Archivo text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
-                  Airport Transfers
-                </li>
-                <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
-                  Executive Ground Transportation
-                </li>
-                <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
-                  Tijuana/CBX Airport Services
-                </li>
-                <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
-                  Temecula Wine Tours
-                </li>
-                <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
-                  Wedding Limousine Transportation
-                </li>
-                <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
-                  San Diego Brewery Tours
-                </li>
-                <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
-                  Concert Limo Services
-                </li>
-                <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
-                  Bachelor & Bachelorette Parties
-                </li>
-                <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
-                  SoCal Casino Limo Services
-                </li>
-                <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
-                  Del Mar Races Limousine Service
-                </li>
-                <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
-                  Graduation Limo Services
-                </li>
-                <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
-                  Sporting Event Transportation
-                </li>
-                <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
-                  Prom Night Limousine Services
-                </li>
-                <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
-                  Quinceañera Limousine Service
-                </li>
-                <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
-                  Nightclub Limo Service
-                </li>
-                <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
-                  Nightclub Limo Service
-                </li>
-                <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
-                  School Event Limo Services
-                </li>
-              </ul>
+            <div className="flex flex-col text-center justify-center">
+              <p className="text-[#FFFFFF] text-[19px] font-Montserrat font-[700] uppercase tracking-[3.6px]">Services</p>
+              <div className='flex justify-center'>
+                <ul className="flex flex-col text-left mt-5 space-y-1 list-inside list-disc whitespace-nowrap">
+                  <li className="font-Archivo text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
+                    Gold Key Concierge
+                  </li>
+                  <li className="font-Archivo text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
+                    Airport Transfers
+                  </li>
+                  <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
+                    Executive Ground Transportation
+                  </li>
+                  <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
+                    Tijuana/CBX Airport Services
+                  </li>
+                  <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
+                    Temecula Wine Tours
+                  </li>
+                  <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
+                    Wedding Limousine Transportation
+                  </li>
+                  <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
+                    San Diego Brewery Tours
+                  </li>
+                  <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
+                    Concert Limo Services
+                  </li>
+                  <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
+                    Bachelor & Bachelorette Parties
+                  </li>
+                  <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
+                    SoCal Casino Limo Services
+                  </li>
+                  <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
+                    Del Mar Races Limousine Service
+                  </li>
+                  <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
+                    Graduation Limo Services
+                  </li>
+                  <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
+                    Sporting Event Transportation
+                  </li>
+                  <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
+                    Prom Night Limousine Services
+                  </li>
+                  <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
+                    Quinceañera Limousine Service
+                  </li>
+                  <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
+                    Nightclub Limo Service
+                  </li>
+                  <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
+                    Nightclub Limo Service
+                  </li>
+                  <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
+                    School Event Limo Services
+                  </li>
+                </ul>
+              </div>
             </div>
 
             {/* THE FLEET */}
-            <div className="sm:text-left">
-              <p className="text-[#FFFFFF] text-[19px] font-Montserrat font-[700] uppercase tracking-[3.6px] text-center lg:text-center">THE FLEET</p>
-              <div className='lg:align-content-center pl-10'>
-                <ul className="mt-5 space-y-1 list-disc list-inside whitespace-nowrap">
+            <div className="flex flex-col text-center justify-center">
+              <p className="text-[#FFFFFF] text-[19px] font-Montserrat font-[700] uppercase tracking-[3.6px]">THE FLEET</p>
+              <div className='flex justify-center'>
+                <ul className="flex flex-col text-left mt-5 space-y-1 list-disc list-inside whitespace-nowrap">
                   <li className="font-Archivo text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     Mercedes Sprinter Limousine
                   </li>
@@ -114,10 +113,10 @@ export default function Footer() {
             </div>
 
             {/* NAVIGATE */}
-            <div className="sm:text-left">
+            <div className="flex flex-col text-center justify-center">
               <p className="text-[#FFFFFF] text-[19px] font-Montserrat font-[700] uppercase tracking-[3.6px] text-center lg:text-center">NAVIGATE</p>
-              <div className="flex pl-14">
-                <ul className="mt-5 space-y-1 list-disc list-inside">
+              <div className='flex justify-center'>
+                <ul className="flex flex-col text-left mt-5 space-y-1 list-disc list-inside">
                   <li className="font-Archivo text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     Home
                   </li>
@@ -145,12 +144,12 @@ export default function Footer() {
             </div>
 
             {/* contact */}
-            <div className="flex flex-col sm:text-left p-3">
+            <div className="flex flex-col text-center justify-center">
               <p className="text-[#FFFFFF] text-[19px] font-Montserrat font-[700] uppercase tracking-[3.6px] text-center lg:text-center">CONTACT</p>
               <p className="font-Archivo text-[14px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)] pt-5">
                 Address: 1426 Morena Blvd, San Diego, CA 92110
               </p>
-              <div className="flex items-center pt-4">
+              <div className="flex items-center justify-center pt-4">
                 <img
                   src="/footer/phone.png"
                   alt="Image 2"
@@ -160,7 +159,7 @@ export default function Footer() {
                   (858) 483-5466
                 </p>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center justify-center">
                 <img
                   src="/footer/mail.png"
                   alt="Image 3"
@@ -174,17 +173,16 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div class="grid grid-cols-3 h-full bg-black items-center pt-8 pb-2">
-
-        <div className="flex justify-start">
-          <p class="text-[#FFF] font-Montserrat text-[12px] font-semibold uppercase tracking-[1.5px] pl-4">
+      <div class="grid grid-cols-1 h-full bg-black items-center justify-center gap-y-20 pt-8 pb-2">
+        <div className="flex justify-center">
+          <p class="text-[#FFF] font-Montserrat text-[8px] font-semibold uppercase tracking-[1.5px] pl-4">
             © 2001 - 2023 Masterpiece Limousine
           </p>
         </div>
         <div className="flex justify-center">
-          <img src="/footer/112.png" alt="Logo" class="h-[67px] w-auto"></img>
+          <img src="/footer/112.png" alt="Logo" class="h-[45px] w-auto"></img>
         </div>
-        <div className="flex justify-end pr-4">
+        <div className="flex justify-center pr-4">
           <ul class="flex items-end gap-3">
             <li>
               <a
@@ -278,7 +276,6 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-
       </div>
 
     </footer >
