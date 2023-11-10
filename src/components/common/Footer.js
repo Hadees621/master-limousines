@@ -1,81 +1,86 @@
-
 export default function Footer() {
   return (
     <footer class="bg-[#16181A]">
-      <div class="mx-auto px-4 py-16 sm:px-6 lg:px-8 sm:align-align-items-center">
+      <div class="sm:align-align-items-center mx-auto px-4 py-16 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div class="grid grid-cols-1 gap-16 sm:grid-cols-2 lg:col-span-3 lg:grid-cols-5">
-
             {/* about us */}
-            <div class="text-center sm:text-left h-full flex flex-col justify-between">
+            <div class="flex h-full flex-col justify-between text-center sm:text-left">
               <div>
-                <p class="text-[#FFFFFF] text-[28px] font-Montserrat font-[700] uppercase tracking-[9.6px] text-center lg:text-center">About us</p>
-                <p class="text-[rgba(255,255,255,0.75)] text-opacity-75 text-center font-librebaskerville italic text-[25px] pt-5 px-7">
+                <p class="font-Montserrat text-center text-[28px] font-[700] uppercase tracking-[9.6px] text-[#FFFFFF] lg:text-center">
+                  About us
+                </p>
+                <p class="font-librebaskerville px-7 pt-5 text-center text-[25px] italic text-[rgba(255,255,255,0.75)] text-opacity-75">
                   High-end luxury Limousine services at affordable prices
                   <br />
                   <br />
-                  We have been providing exceptional high-end transportation throughout San Diego county for over 22 years.
+                  We have been providing exceptional high-end transportation
+                  throughout San Diego county for over 22 years.
                 </p>
               </div>
-              <p class="mb-2 mt-auto text-[rgba(255,255,255,0.75)] text-center font-Archivo text-[20px] font-700">License: TCP15412-A</p>
+              <p class="font-Archivo font-700 mb-2 mt-auto text-center text-[20px] text-[rgba(255,255,255,0.75)]">
+                License: TCP15412-A
+              </p>
             </div>
 
             {/* Services */}
             <div className="text-center sm:text-left">
-              <p className="text-[#FFFFFF] text-[28px] font-Montserrat font-[700] uppercase tracking-[9.6px] text-center lg:text-center lg:mr-24 text-700">Services</p>
-              <ul className="mt-8 space-y-3 list-disc list-inside whitespace-nowrap">
-                <li className="font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+              <p className="font-Montserrat text-700 text-center text-[28px] font-[700] uppercase tracking-[9.6px] text-[#FFFFFF] lg:mr-24 lg:text-center">
+                Services
+              </p>
+              <ul className="mt-8 list-inside list-disc space-y-3 whitespace-nowrap">
+                <li className="font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                   Gold Key Concierge
                 </li>
-                <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                   Airport Transfers
                 </li>
-                <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                   Executive Ground Transportation
                 </li>
-                <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                   Tijuana/CBX Airport Services
                 </li>
-                <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                   Temecula Wine Tours
                 </li>
-                <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                   Wedding Limousine Transportation
                 </li>
-                <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                   San Diego Brewery Tours
                 </li>
-                <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                   Concert Limo Services
                 </li>
-                <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                   Bachelor & Bachelorette Parties
                 </li>
-                <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                   SoCal Casino Limo Services
                 </li>
-                <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                   Del Mar Races Limousine Service
                 </li>
-                <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                   Graduation Limo Services
                 </li>
-                <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                   Sporting Event Transportation
                 </li>
-                <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                   Prom Night Limousine Services
                 </li>
-                <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                   Quinceañera Limousine Service
                 </li>
-                <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                   Nightclub Limo Service
                 </li>
-                <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                   Nightclub Limo Service
                 </li>
-                <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                   School Event Limo Services
                 </li>
               </ul>
@@ -83,32 +88,29 @@ export default function Footer() {
 
             {/* THE FLEET */}
             <div className="text-center sm:text-left">
-              <p className="text-[#FFFFFF] text-[28px] font-[700] font-Montserrat font-700 uppercase tracking-[9.6px] text-center lg:text-center lg:mr-28">THE FLEET</p>
-              <div className='lg:align-content-center'>
-                <ul className="mt-6 space-y-4 text-sm list-disc list-inside">
-                  <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+              <p className="font-Montserrat font-700 text-center text-[28px] font-[700] uppercase tracking-[9.6px] text-[#FFFFFF] lg:mr-28 lg:text-center">
+                THE FLEET
+              </p>
+              <div className="lg:align-content-center">
+                <ul className="mt-6 list-inside list-disc space-y-4 text-sm">
+                  <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                     Mercedes Sprinter Limousine
-                    <div className="absolute top-1/2 left-0 w-3 h-3 text-[rgba(255,255,255,0.75)] transform -translate-y-1/2"></div>
+                    <div className="absolute left-0 top-1/2 h-3 w-3 -translate-y-1/2 transform text-[rgba(255,255,255,0.75)]"></div>
                   </li>
-                  <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                  <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                     Mercedes Sprinter Executive
-
                   </li>
-                  <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                  <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                     Executive Sedan
-
                   </li>
-                  <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                  <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                     Luxury Stretch Limousine
-
                   </li>
-                  <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                  <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                     Hummer Stretch Limousine
-
                   </li>
-                  <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                  <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                     Executive SUV
-
                   </li>
                 </ul>
               </div>
@@ -116,38 +118,37 @@ export default function Footer() {
 
             {/* NAVIGATE */}
             <div className="text-center sm:text-left">
-              <p className="text-[#FFFFFF] text-[28px] font-[700] font-Montserrat font-700 uppercase tracking-[9.6px] text-center lg:text-center lg:mr-32">NAVIGATE</p>
-              <ul className="mt-6 space-y-4 text-sm list-disc list-inside">
-                <li className="font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+              <p className="font-Montserrat font-700 text-center text-[28px] font-[700] uppercase tracking-[9.6px] text-[#FFFFFF] lg:mr-32 lg:text-center">
+                NAVIGATE
+              </p>
+              <ul className="mt-6 list-inside list-disc space-y-4 text-sm">
+                <li className="font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                   Home
                 </li>
-                <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                   About us
-
                 </li>
-                <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                   Specials
-
                 </li>
-                <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                   Fleet
-
                 </li>
-                <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                   Services
-
                 </li>
-                <li className=" font-Archivo text-[26px] font-300 leading-[24.8px] text-[rgba(255,255,255,0.75)]">
+                <li className=" font-Archivo font-300 text-[26px] leading-[24.8px] text-[rgba(255,255,255,0.75)]">
                   Reservations
-
                 </li>
               </ul>
             </div>
 
             {/* contact */}
             <div class="text-center sm:text-left">
-              <p class="text-[#FFFFFF] text-[28px] font-[700] font-Montserrat font-700 uppercase tracking-[9.6px] text-center lg:text-center lg:mr-24">CONTACT</p>
-              <p class="font-Archivo text-[26px] font-300 leading-[28.8px] text-[rgba(255,255,255,0.75)] pt-7">
+              <p class="font-Montserrat font-700 text-center text-[28px] font-[700] uppercase tracking-[9.6px] text-[#FFFFFF] lg:mr-24 lg:text-center">
+                CONTACT
+              </p>
+              <p class="font-Archivo font-300 pt-7 text-[26px] leading-[28.8px] text-[rgba(255,255,255,0.75)]">
                 Address: 1426 Morena Blvd, San Diego, CA 92110
                 <br />
                 <br />
@@ -157,21 +158,18 @@ export default function Footer() {
                 Contact Us
               </p>
             </div>
-
           </div>
         </div>
       </div>
 
-      <div class="flex h-[153px] bg-black justify-between items-center pr-16 mx-auto">
-
-        <p class="text-white font-Montserrat text-[18px] font-semibold tracking-widest uppercase ml-6">
+      <div class="mx-auto flex h-[153px] items-center justify-between bg-black pr-16">
+        <p class="font-Montserrat ml-6 text-[18px] font-semibold uppercase tracking-widest text-white">
           © 2001 - 2023 Masterpiece Limousine
         </p>
 
         <img src="/navbar/112.png" alt="Logo" class="h-[87px] w-[390px]"></img>
 
         <ul class="flex gap-10">
-
           <li>
             <a
               href="/"
@@ -196,7 +194,6 @@ export default function Footer() {
             </a>
           </li>
 
-
           <li>
             <a
               href="/"
@@ -212,9 +209,7 @@ export default function Footer() {
                 viewBox="0 0 24 24"
                 aria-hidden="true"
               >
-                <path
-                  d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
-                />
+                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
               </svg>
             </a>
           </li>
@@ -266,10 +261,8 @@ export default function Footer() {
               </svg>
             </a>
           </li>
-
         </ul>
       </div>
-
-    </footer >
-  )
+    </footer>
+  );
 }
