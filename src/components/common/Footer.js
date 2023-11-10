@@ -174,14 +174,14 @@ export default function Footer() {
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 h-full bg-black items-center justify-center gap-y-20 py-4">
         <div className="flex justify-center md:justify-start">
-          <p class="text-[#FFF] font-Montserrat text-[8px] lg:text-[11px] font-semibold uppercase tracking-[1.5px] pl-4">
+          <p class="text-[#FFF] font-Montserrat text-[8px] lg:text-[11px] font-semibold uppercase tracking-[1.5px] pl-4 2xl:pl-8">
             © 2001 - 2023 Masterpiece Limousine
           </p>
         </div>
         <div className="flex justify-center">
           <img src="/footer/112.png" alt="Logo" class="h-[45px] lg:h-[65px] w-auto"></img>
         </div>
-        <div className="flex justify-center md:justify-end md:pr-4">
+        <div className="flex justify-center md:justify-end md:pr-4 2xl:pr-8">
           <ul class="flex items-end gap-3 lg:gap-4">
             <li>
               <a

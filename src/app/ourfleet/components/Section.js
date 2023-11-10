@@ -11,7 +11,7 @@ const Section = ({ order, textContent, title, imgURL }) => {
                 <h1 className="text-white font-Montserrat text-[24px] font-medium tracking-[7px] uppercase text-center my-16 lg: 2xl:text-[40px] md:my-14 1024:mb-10 2xl:my-24">{title}</h1>
                 {textContent.map((text, index) => (
                     <React.Fragment key={index}>
-                        <p className="text-[12px] font-Archivo text-center text-white mx-14 md:text-[14px] md:mx-20 2xl:text-[25px] 1024:mx-20 1024:text-[15px]">
+                        <p className="text-[12px] font-Archivo text-center text-white mx-14 md:text-[14px] md:mx-20 2xl:text-[25px] 1024:mx-14 1024:text-[15px]">
                             {text}
                         </p>
                         {index < textContent.length - 1 && <br />}
