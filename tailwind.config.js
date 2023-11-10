@@ -7,10 +7,16 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans'],
+        archivo: ['Archivo', 'sans'],
+        librebaskerville: ['LibreBaskerville', 'serif'],
+        leaguespartan: ['League Spartan', 'sans'],
+      },
+      screens: {
+        '1024': '1024px',
+        '2xl': '2560px',
+        '1440': '1440px'
       },
     },
   },
