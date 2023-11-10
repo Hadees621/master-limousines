@@ -6,7 +6,7 @@ import Hero from './components/Hero';
 function OurFleet() {
   const sections = [
     {
-      order: 'left', // Image on left, text on right
+      order: 'left',
       textContent: [
         " When it comes to luxury ground transportation, the Mercedes-Benz Sprinter Limo is a top choice for any occasion. Whether you're planning a corporate event or a wedding, this sleek and stylish vehicle is sure to impress. Not only is the interior spacious and comfortable, but the onboard TVs and bar area make it perfect for presentations or celebrations.",
         "At Masterpiece Limousine, we prioritize safety, reliability, and comfort, which is why we offer the Mercedes Sprinter Limo for our clients. Our professionally trained chauffeurs ensure a smooth and enjoyable ride, and we are fully licensed and insured for your peace of mind.",
@@ -17,7 +17,7 @@ function OurFleet() {
       imgURL: "/ourfleet/MSL.png"
     },
     {
-      order: 'right', // Image on right, text on left
+      order: 'right',
       textContent: [
         "Looking for luxury ground transportation that's reliable, comfortable, and safe? Look no further than the Mercedes-Benz Executive Sprinter. This vehicle is perfect for corporate team-building excursions, with its spacious interior and open-style limo seating, providing a luxury environment for up to 12 passengers.",
         "Not only is the Sprinter impressive in appearance, but it's also equipped with advanced safety features such as collision prevention, lane keeping, and crosswind assist. The Sprinter's V6 CDI diesel engine offers powerful performance and fuel efficiency, making it a reliable choice for any long-distance travel.",
@@ -29,7 +29,7 @@ function OurFleet() {
 
     },
     {
-      order: 'left', // Image on left, text on right
+      order: 'left',
       textContent: [
         "Masterpiece Limousine is proud to offer our clients luxury transportation services that combine comfort, safety, and reliability. Whether you're traveling for business or pleasure, our professional chauffeurs are dedicated to ensuring your experience is stress-free and enjoyable. Our luxurious stretch limo rental is one of our most popular services, offering passengers an unforgettable travel experience.",
         "Our Stretch limos are spacious, comfortable, and can accommodate up to 8 passengers, with plenty of luggage space. This makes it perfect for airport transportation, business meetings, or a night out on the town. The Stretch limo rental is the perfect choice for those who seek both style and convenience.",
@@ -42,7 +42,7 @@ function OurFleet() {
 
     },
     {
-      order: 'right', // Image on right, text on left
+      order: 'right',
       textContent: [
         "At Masterpiece Limousine, we understand the importance of making a statement and standing out from the crowd. That's why we offer the most exclusive and luxurious limousine services in San Diego, including our H2 Hummer Limo.",
         "Our H2 Hummer Limo is the epitome of exclusivity, attracting more attention than any other car on the street. Custom-designed with amenities like neon lights, televisions, and a wet bar, this limo is perfect for bachelor/bachelorette parties, weddings, proms, nights on the town, and sporting events. With Bluetooth connectivity, you can easily stream your favorite music and make hands-free calls while you ride in style.",
@@ -55,7 +55,7 @@ function OurFleet() {
 
     },
     {
-      order: 'left', // Image on left, text on right
+      order: 'left',
       textContent: [
         "Luxury ground transportation is the perfect way to elevate your travel experience, and Masterpiece Limousine offers a range of options to suit your needs. Our Executive Sedans are a great choice for small groups, with seating for 2-3 passengers and room for luggage. They are ideal for business meetings, airport transportation, and special events.",
         "With luxurious features like leather seats, climate control, and ample legroom, our Executive Sedans offer both style and comfort. Our fleet includes top-of-the-line brands like Mercedes, Cadillac, and Lincoln, ensuring a smooth and sophisticated ride.",
@@ -67,7 +67,7 @@ function OurFleet() {
 
     },
     {
-      order: 'right', // Image on right, text on left
+      order: 'right',
       textContent: [
         "Indulge in the luxury of our new Executive SUVs, designed for the discerning traveler seeking a top-notch transportation experience. Our SUVs are the epitome of sophistication, offering unparalleled comfort and convenience.",
         "From the moment you step into one of our Executive SUVs, you will be struck by their sleek and modern design. The plush leather seating and advanced audio systems provide the ultimate in luxury and entertainment. With three rows of seating, these vehicles can accommodate up to 6 passengers comfortably, making them the perfect choice for exclusive corporate events or private gatherings.",
@@ -84,7 +84,7 @@ function OurFleet() {
   return (
     <>
       {/* <Navbar /> */}
-      <Hero /> 
+      <Hero />
       {sections.map((section, index) => (
         <Section key={index} order={section.order} textContent={section.textContent} title={section.title} imgURL={section.imgURL} />
       ))}

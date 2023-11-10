@@ -14,8 +14,9 @@ module.exports = {
         leaguespartan: ['League Spartan', 'sans'],
       },
       screens: {
-        '1024': '1023px',
-        // You can add more custom breakpoints here if needed.
+        '1024': '1024px',
+        '2xl': '2560px',
+        '1440': '1440px'
       },
     },
   },
