@@ -24,7 +24,7 @@ export default function Footer() {
             <div className="flex flex-col text-center justify-center">
               <p className="text-[#FFFFFF] text-[19px] font-Montserrat font-[700] uppercase tracking-[3.6px]">Services</p>
               <div className='flex justify-center'>
-                <ul className="flex flex-col text-left mt-5 space-y-1 list-inside list-disc whitespace-nowrap 1024:whitespace-normal 1440:whitespace-nowrap">
+                <ul className="flex flex-col text-left mt-5 space-y-1 list-inside list-disc whitespace-nowrap">
                   <li className="font-Archivo text-[15px] md:text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     Gold Key Concierge
                   </li>
@@ -40,9 +40,7 @@ export default function Footer() {
                   <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     Temecula Wine Tours
                   </li>
-                  <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
-                    Wedding Limousine Transportation
-                  </li>
+                 
                   <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     San Diego Brewery Tours
                   </li>
@@ -51,6 +49,9 @@ export default function Footer() {
                   </li>
                   <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     Bachelor & Bachelorette Parties
+                  </li>
+                  <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
+                    Wedding Limousine Transportation
                   </li>
                   <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     SoCal Casino Limo Services
@@ -69,9 +70,6 @@ export default function Footer() {
                   </li>
                   <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     Quinceañera Limousine Service
-                  </li>
-                  <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
-                    Nightclub Limo Service
                   </li>
                   <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     Nightclub Limo Service
@@ -134,9 +132,6 @@ export default function Footer() {
                   <li className=" font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     Fleet
 
-                  </li>
-                  <li className=" font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
-                    Services
                   </li>
                   <li className=" font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     Services
