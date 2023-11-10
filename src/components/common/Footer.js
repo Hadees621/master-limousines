@@ -6,7 +6,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-3">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:col-span-3 lg:gap-x 1024:grid-cols-5 2xl:grid-cols-5 gap-y-10">
             {/* about us */}
-            <div className="flex flex-col text-center justify-center h-full px-[25px] lg:px-[2opx] gap-y-10">
+            <div className="flex flex-col text-center justify-center h-full px-[25px] lg:mx-[10px] lg:ml-0 lg:mr-5 gap-y-10">
 
               <p className="text-[#FFFFFF] text-[20px] font-Montserrat font-[700] uppercase tracking-[3.6px] text-center lg:text-center">About us</p>
               <div className="px-">
@@ -31,19 +31,18 @@ export default function Footer() {
                   <li className="font-Archivo text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     Airport Transfers
                   </li>
-                  <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
-                    Executive Ground Transportation
-                  </li>
+
                   <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     Tijuana/CBX Airport Services
                   </li>
                   <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     Temecula Wine Tours
                   </li>
-                 
+
                   <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     San Diego Brewery Tours
                   </li>
+
                   <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     Concert Limo Services
                   </li>
@@ -55,6 +54,9 @@ export default function Footer() {
                   </li>
                   <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     SoCal Casino Limo Services
+                  </li>
+                  <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
+                    Executive Ground Transportation
                   </li>
                   <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     Del Mar Races Limousine Service
