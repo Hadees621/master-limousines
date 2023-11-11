@@ -57,6 +57,8 @@ export const image_urls = {
     "https://s3-alpha-sig.figma.com/img/910a/84a1/a9bbfc3043d321da965a42a4fe6df54b?Expires=1700438400&Signature=Z9q97vMdQlge80D1XRJNVYUDu2v6v~SRTPaLdGsKq8r7yNlRDGzqiMejvfGBQPg4G6GlCAgwoIUcLXqU0A8KFoBXyzcW4CuWMVru3V3tPvMDnQcqpgwX9yfGjt8ZqG3JbgbLUvlENT7ciSwDr4wooGiZXy1uvhwsOBnGxY3sr~zC~9sf4HpRIUaOF5VIH0JmBsaN0goEwHv9LUkLMTtW8ymgShiL0svQbwoAq6T9s1FzYW-rLlqrh0cLFuBAZ2vhO-e4B1HA7USb88yyGjp2wVZbP~Ep~kmwNoM119hcEsG8L8QOPNnli4yjnfqH4dmLfmem57~Nkbw72M--C-BUYw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
   events_banner:
     "https://s3-alpha-sig.figma.com/img/4029/76d5/f768d297837638be1b32d563fd928951?Expires=1700438400&Signature=o8t36h97fF46iAw273IAxjhxcdYfKIe7bzKTQvotr5D1wfwzpX5BNFsMCgIY--BX-De9OH4bq~md0-DktWP9qnR5uqcQGEDCepbpntVj~5ZY394O1fRyRlBxnbCGjTrdQjd4Sq-wfnY3giKe~y5OYf4o2t0StntdGtZ1i3CSLp5HUjio7JGM6QgHR~WT629N0QrGdq46D9~f7UXkVq8XZO4ZlItnYd7Gk-0Y71Hxv3hsa3TVW-0O8jLYRISlgoxVh6xNv077~Fn4fgb9Tr7eW5JJXdCLmNtnJiRJxu0xwcyl1nXv5R2JABq327c4CG0Lw6ecGGjc~uRLBFUn9gUALQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+  reservation_banner:
+    "https://s3-alpha-sig.figma.com/img/2e27/74c9/f966bb205f8eea68663d865c0868bd02?Expires=1700438400&Signature=nzt05AjL6sRepvnCV-Fq4UB2Q73v5zSTdDrf4vdu7JQkho6ItLli9JLARYarV-oOaiadf50ueua4mAb-W8-PiSQCmZD2vSyPodaiGmAdib-b-rCmEYFrOadOyjDuhrXu6~vDyC2VUASPbGG081gA38EFDVqJdBH8o-8hQ2nTcOUgIOK5WYbhcJzk61wltl5yQeEhm7FO7EUDzMIMhAq2~iKlO0gbTPQwoU7mpn9EFlMX5urOemkqyZnT6mh2u3QgmbQNe18fMTQwj~deHbThUavUCIofiOYzgw6x-jNT~Tg2AGwBlb0iMO41WthfwxruE0Cv7pAh5LbGBzRFx-ArlQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
 };
 
 export const News = [

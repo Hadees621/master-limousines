@@ -58,7 +58,7 @@ export default function Navbar() {
         <button
           className={`hidden bg-crimson px-4  py-[15px] text-xs uppercase text-white lg:block ${fonts.montserrat600}`}
         >
-          Reservations
+         <Link href="/reservation"> Reservations</Link>
         </button>
       </div>
     </div>
