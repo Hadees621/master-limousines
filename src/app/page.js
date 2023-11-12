@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
+import Estd from "@/components/home/Estd";
 import Fleet from "@/components/home/Fleet";
+import Polygons from "@/components/common/Polygons";
 import { Banner, LatestNews } from "@/components/home";
 import CustomerBase from "@/components/home/CustomerBase";
-import Estd from "@/components/home/Estd";
 import HomeContact from "@/components/home/HomeContact";
 
 function Home() {
@@ -12,7 +13,7 @@ function Home() {
       {/* Banner Section  */}
       <div className="relative">
         <Banner />
-        {/* <Polygons active={-1} /> */}
+        <Polygons active={-1} />
       </div>
 
       {/* The Fleet Section  */}
@@ -26,13 +27,15 @@ function Home() {
       </div>
 
       {/* The Latest News Section  */}
-      <div class="my-32">
+      <div class="my-32 relative">
         <LatestNews />
+        <Polygons active={12} classes="top[20%]"/>
       </div>
 
       {/* The Estd. Section  */}
-      <div className="">
+      <div className="relative">
         <Estd />
+        <Polygons active={15} />
       </div>
 
       {/* The Contact Section  */}

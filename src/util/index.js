@@ -65,7 +65,7 @@ export const News = [
   {
     src: "https://s3-alpha-sig.figma.com/img/512e/66ad/b811cc4bedfdd41fe75026154c795625?Expires=1700438400&Signature=bw9m6MIizzoiwTPvjRMS6mEgLq~W8lPB0DvAZ~XAlH3kyRMdJmF-mN9k7i2YlftKlg5QVxQle79~Dtcatyl6XEgOZJBDVux8qUptEPYzKmlKhEVuU3rERBQ7p-ztTGkqUiNBoQuYSm2gzkzDzaB728CHIDkyd5jLHTDscmdzqMs7SUhJKQtwEPnEV-xg9sRZxdyn5vPYkT1rdgt~2sJt41AyuVHpovba6tq2dQfypAQ5CIySHIZD5I7PFNMUFzAfVCaChg8Ahg~Tl9B0QQIP9HfuaRn~kVAJC5lc2svvEbTM5dS3-F6aZx879puxtfk~5V7ke~HqO4gS3PCdIyuT8g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
     title: "COMIC-CON SDCC 2016 LIMOUSINE RENTAL SERVICE SAN DIEGO",
-    desc: "Looking for a simple and stylish way in and out of the convention center this year? Make it easier on yourself for San Diego Comic Con 2016 and avoid parking or taking the bus or train ... read more",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, atque? Incidunt, fugiat. Vero nulla laborum quidem beatae distinctio ex aliquid reiciendis sit debitis. Molestias magni amet consequuntur! Eligendi magnam quisquam deleniti voluptatibus nulla quidem sunt culpa rem, optio nesciunt expedita, earum ea distinctio. Laudantium tempore earum dolor non accusamus sed ex et iure architecto, quasi illo enim ducimus? Quos, ab tempora libero veniam dolor aliquam, deserunt eligendi exercitationem eos dolores ea? Error cupiditate sint porro deleniti id nam exercitationem fugit natus veritatis modi itaque quisquam obcaecati similique labore commodi iste vitae hic, cum autem, magnam libero provident laborum. Totam repellat animi consequuntur consectetur modi. Impedit explicabo doloremque pariatur ad cum iusto odio saepe, quos dolores delectus perspiciatis! Consequuntur, exercitationem veniam necessitatibus rem sequi at ad voluptatum corrupti beatae dolorum a autem aut nobis ipsam cupiditate perferendis facere molestiae quaerat iste facilis repudiandae illum quae, deserunt atque! Doloribus et obcaecati odit quas in ipsum qui eum corrupti? Iusto aspernatur, voluptatem saepe quos veritatis labore illum non possimus incidunt numquam deleniti ipsum aut provident porro placeat excepturi sapiente ducimus obcaecati dolor blanditiis, architecto ratione. Praesentium possimus sed vel. Nobis ipsum doloremque aspernatur eaque pariatur eum quas nam fugit esse ullam doloribus, quos quo repellat consectetur fuga. Odit asperiores similique, tempora hic minima saepe quisquam enim rerum nam sed fugiat amet eveniet rem omnis tenetur laudantium minus veniam obcaecati esse repellat beatae quibusdam ratione. Obcaecati modi veritatis maiores et earum in eius repudiandae, provident laboriosam mollitia praesentium error, facere reiciendis hic voluptate quae illum veniam necessitatibus dolor quia ea explicabo numquam accusamus! In velit ut quisquam cupiditate beatae vitae debitis expedita possimus quia saepe voluptas sequi modi sed, et iure repellat distinctio quasi aliquam porro hic? Accusantium laboriosam impedit doloribus aperiam explicabo, autem reprehenderit accusamus quis harum, voluptatibus illum sit culpa modi nam.",
     time: "20 Jul 2017/By masterlimo",
   },
   {
@@ -81,3 +81,10 @@ export const News = [
     time: "20 Jul 2017/By masterlimo",
   },
 ];
+
+export function limitAndConcat(str, limit = 50, displayLimit = 20) {
+  if (str.length > limit) {
+    return str.slice(0, displayLimit) + " ... read more";
+  }
+  return str;
+}

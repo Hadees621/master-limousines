@@ -2,7 +2,10 @@ import React from "react";
 
 function Polygon({ isActive = false, top }) {
   return (
-    <div className={`relative h-[32px] w-[18px]`} style={{ top: `-${top}px` }}>
+    <div
+      className={`3xxlg:h-[47px] 2xxlg:h-[43px] relative h-[32px]  w-[60px] xxlg:h-[38px]`}
+      style={{ top: `-${top}px` }}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="100%"
@@ -20,10 +23,12 @@ function Polygon({ isActive = false, top }) {
   );
 }
 
-function Polygons({ active }) {
+function Polygons({ active, classes }) {
   const polygons = new Array(20).fill(null);
   return (
-    <div className="absolute right-5 top-[35%] flex translate-y-[-19%] flex-col ">
+    <div
+      className={`absolute right-5 top-[35%] flex translate-y-[-19%] flex-col ${classes}`}
+    >
       {polygons.map((_, idx) => {
         return (
           <Polygon

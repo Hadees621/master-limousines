@@ -19,13 +19,13 @@ function Fleet() {
     { bottomText: "SUV", topText: "Executive SUV" },
   ];
 
-  const sliderThumbnail = `group relative inline-block h-[400px] w-56  transition-all duration-700 ease-out hover:w-80`;
-  const rowPara = `w-auto text-center text-xs leading-[1.1] text-[#e7e2e2] sm:w-[80%] md:w-1/2 ${Archivo}`;
+  const sliderThumbnail = `group relative inline-block xxlg:h-[600px] h-[400px] xxlg:w-[350px] w-56  transition-all duration-700 ease-out xxlg:hover:w-[450px] hover:w-80 `;
+  const rowPara = `w-auto text-center xxlg:text-base text-xs leading-[1.1] text-[#e7e2e2] sm:w-[80%] md:w-1/2 ${Archivo}`;
   const rowHeading = `text-[40px] text-white sm:text-[60px]  md:w-1/2 md:text-[80px] ${LeagureSpartan}`;
-  const lastRow = `text-xs tracking-[10px] text-white sm:text-sm ${Montserrat}`;
+  const lastRow = `xxlg:text-base text-xs tracking-[10px] text-white sm:text-sm ${Montserrat}`;
 
   const Thumbnail = ({ idx, bottomText }) => {
-    const utils = `absolute bottom-1 left-2 text-sm tracking-[8px] text-white ${Montserrat}`;
+    const utils = `absolute bottom-1 left-2 xxlg:text-base text-sm tracking-[8px] text-white ${Montserrat}`;
     return (
       <>
         <img

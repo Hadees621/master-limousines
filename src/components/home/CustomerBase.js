@@ -10,14 +10,9 @@ function CustomerBase() {
   const images = image_urls.CustomerBase;
   const clients = new Array(14).fill(null);
 
-  const primaryHeading = `text-center text-[40px] text-white ${LibreBaskerville}`;
+  const primaryHeading = `text-center xxlg:text-[60px] text-[40px] text-white ${LibreBaskerville}`;
   const secondaryHeading = `mx-2 text-lg uppercase tracking-[10px] text-[#a9a8a7] ${Montserrat}`;
   
-  const style = {
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fill, minmax(217px, 1fr))",
-    gap: "10px",
-  };
 
   return (
     <div>
@@ -25,14 +20,14 @@ function CustomerBase() {
         <h1 className={primaryHeading}>Our prized customer base</h1>
       </div>
 
-      <div className="p-5 px-10 sm:px-14 lg:px-80" style={{ ...style }}>
+      <div className="p-5 px-10 sm:px-14 lg:px-80 xxlg:customer-base-xxlg customer-base">
         {clients.map((_, idx) => {
           return (
             <img
               key={idx}
               src={images[`Logo${idx + 1}`]}
               alt=""
-              className="h-[120px]"
+              className="xxlg:h-auto h-[120px]"
             />
           );
         })}

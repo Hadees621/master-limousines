@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import { image_urls } from "@/util";
-import { archivo300, leagueSpartan700 } from "@/util/fonts";
 import React from "react";
+import { image_urls } from "@/util";
 import Font from "../responsive/Font";
+import { archivo300, leagueSpartan700 } from "@/util/fonts";
 
 const Content = () => {
   return (
@@ -26,9 +26,9 @@ const Content = () => {
         Service
       </Font>
 
-      <div className="mt-12 flex w-[450px]  flex-col items-end justify-end opacity-0 transition-all lg:opacity-100">
+      <div className="3xxlg:mt-[98px] xxlg:mt-[60px] mt-12 flex 3xxlg:w-[565px] w-[450px]  flex-col items-end justify-end opacity-0 transition-all lg:opacity-100">
         <Font
-          classes={`ps-[94px] leading-[1.1] text-end text-[#e9dede] ${archivo300}`}
+          classes={` leading-[1.1] text-end text-[#e9dede] ${archivo300}`}
           size={8.2}
         >
           Offering luxury transportation options for any occasion. We have a
@@ -59,6 +59,7 @@ function Banner() {
         className="h-full w-full object-cover xxs:h-auto"
         srcset=""
       />
+      {/* <Content /> */}
       {/* <Content /> */}
     </div>
   );
