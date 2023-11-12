@@ -7,20 +7,21 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        primary_600: ["var(--font-montserrat-600)"],
-        primary_500: ["var(--font-montserrat-500)"],
-        primary_400: ["var(--font-montserrat-400)"],
-      },
       colors: {
         crimson: "#A72211",
         active_navbar: "#2189B7",
       },
       screens: {
+        "3xxlg": "1928px",
+        "2xxlg": "1700px",
         xxlg: "1500px",
+        slg: "1000px",
+        lgMd: "900px",
+        smMd: "840px",
+        xs: "500px",
         xxs: "400px",
+        "2xxsl": "300px",
       },
-     
     },
   },
   plugins: [],
