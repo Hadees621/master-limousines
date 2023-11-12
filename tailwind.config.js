@@ -14,6 +14,7 @@ module.exports = {
         leaguespartan: ['League Spartan', 'sans'],
       },
       screens: {
+        '320': '320px',
         '375': '375px',
         '425': '425px',
         '768': '768px',
