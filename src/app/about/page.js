@@ -9,7 +9,7 @@ function About() {
       <Banner />
       <Middle />
       <Customers />
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }
