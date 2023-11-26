@@ -6,7 +6,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-3">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:col-span-3 lg:gap-x 1024:grid-cols-5 2xl:grid-cols-5 gap-y-10">
             {/* about us */}
-            <div className="flex flex-col text-center justify-center h-full px-[25px] lg:px-[2opx] gap-y-10">
+            <div className="flex flex-col text-center justify-center h-full px-[25px] lg:mx-[10px] lg:ml-0 lg:mr-5 gap-y-10">
 
               <p className="text-[#FFFFFF] text-[20px] font-Montserrat font-[700] uppercase tracking-[3.6px] text-center lg:text-center">About us</p>
               <div className="px-">
@@ -24,28 +24,25 @@ export default function Footer() {
             <div className="flex flex-col text-center justify-center">
               <p className="text-[#FFFFFF] text-[19px] font-Montserrat font-[700] uppercase tracking-[3.6px]">Services</p>
               <div className='flex justify-center'>
-                <ul className="flex flex-col text-left mt-5 space-y-1 list-inside list-disc whitespace-nowrap 1024:whitespace-normal 1440:whitespace-nowrap">
+                <ul className="flex flex-col text-left mt-5 space-y-1 list-inside list-disc whitespace-nowrap">
                   <li className="font-Archivo text-[15px] md:text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     Gold Key Concierge
                   </li>
                   <li className="font-Archivo text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     Airport Transfers
                   </li>
-                  <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
-                    Executive Ground Transportation
-                  </li>
+
                   <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     Tijuana/CBX Airport Services
                   </li>
                   <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     Temecula Wine Tours
                   </li>
-                  <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
-                    Wedding Limousine Transportation
-                  </li>
+
                   <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     San Diego Brewery Tours
                   </li>
+
                   <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     Concert Limo Services
                   </li>
@@ -53,7 +50,13 @@ export default function Footer() {
                     Bachelor & Bachelorette Parties
                   </li>
                   <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
+                    Wedding Limousine Transportation
+                  </li>
+                  <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     SoCal Casino Limo Services
+                  </li>
+                  <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
+                    Executive Ground Transportation
                   </li>
                   <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     Del Mar Races Limousine Service
@@ -69,9 +72,6 @@ export default function Footer() {
                   </li>
                   <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     Quinceañera Limousine Service
-                  </li>
-                  <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
-                    Nightclub Limo Service
                   </li>
                   <li className="font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     Nightclub Limo Service
@@ -138,9 +138,6 @@ export default function Footer() {
                   <li className=" font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
                     Services
                   </li>
-                  <li className=" font-Archivo  text-[15px] font-[300] leading-[20.8px] text-[rgba(255,255,255,0.75)]">
-                    Services
-                  </li>
                 </ul>
               </div>
             </div>
@@ -177,14 +174,14 @@ export default function Footer() {
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 h-full bg-black items-center justify-center gap-y-20 py-4">
         <div className="flex justify-center md:justify-start">
-          <p class="text-[#FFF] font-Montserrat text-[8px] lg:text-[11px] font-semibold uppercase tracking-[1.5px] pl-4">
+          <p class="text-[#FFF] font-Montserrat text-[8px] lg:text-[11px] font-semibold uppercase tracking-[1.5px] pl-4 2xl:pl-8">
             © 2001 - 2023 Masterpiece Limousine
           </p>
         </div>
         <div className="flex justify-center">
           <img src="/footer/112.png" alt="Logo" class="h-[45px] lg:h-[65px] w-auto"></img>
         </div>
-        <div className="flex justify-center md:justify-end md:pr-4">
+        <div className="flex justify-center md:justify-end md:pr-4 2xl:pr-8">
           <ul class="flex items-end gap-3 lg:gap-4">
             <li>
               <a
