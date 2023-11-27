@@ -1,66 +1,42 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import { image_urls } from "@/util";
-import Font from "../responsive/Font";
-import { archivo300, leagueSpartan700 } from "@/util/fonts";
-
-const Content = () => {
-  return (
-    <div className="absolute  right-[4.5%]  top-[59%] flex translate-x-[-4.5%] translate-y-[-59%] flex-col  items-end">
-      <Font
-        classes={`text-right uppercase leading-[0] text-white drop-shadow-md  ${leagueSpartan700}`}
-        size={48}
-      >
-        San Diego
-      </Font>
-      <Font
-        classes={`text-right uppercase leading-[1.5] text-white drop-shadow-md  ${leagueSpartan700}`}
-        size={48}
-      >
-        Limousine
-      </Font>
-      <Font
-        classes={`text-right uppercase leading-[0] text-white drop-shadow-md  ${leagueSpartan700}`}
-        size={48}
-      >
-        Service
-      </Font>
-
-      <div className="3xxlg:mt-[98px] xxlg:mt-[60px] mt-12 flex 3xxlg:w-[565px] w-[450px]  flex-col items-end justify-end opacity-0 transition-all lg:opacity-100">
-        <Font
-          classes={` leading-[1.1] text-end text-[#e9dede] ${archivo300}`}
-          size={8.2}
-        >
-          Offering luxury transportation options for any occasion. We have a
-          vehicle to fit your needs, from stylish limousines to spacious party
-          buses. Our professional chauffeurs have local knowledge and provide
-          top-notch service to make your experience unforgettable.
-        </Font>
-
-        <Font
-          classes={`ps-[121px] text-right leading-[1.1] text-[#e9dede] ${archivo300} mt-5 `}
-          size={8.2}
-        >
-          So choose us for an elegant and memorable transportation experience.
-        </Font>
-      </div>
-    </div>
-  );
-};
+"use client";
+import React, { useEffect, useState } from "react";
+import Image from "next/legacy/image";
+import { homeURL } from "@/util/urls";
+import BannerContent from "./BannerContent";
 
 function Banner() {
+  const [width, setWidth] = useState(1349);
+
+  useEffect(() => {
+    if (window !== undefined) {
+      setWidth(window.innerWidth);
+    }
+  }, []);
+
   return (
-    <div className="relative h-[257px] xxs:h-auto">
-      {/* <div class="absolute w-[200px] h-[130vh] bg-black right-0 opacity-95"></div> */}
-      <div class="absolute right-[0px] h-[130vh] w-[1250px] bg-gradient-to-l from-black to-transparent shadow-md"></div>
-      <img
-        src={image_urls.home_banner}
-        alt="hero-banner"
-        className="h-full w-full object-cover xxs:h-auto"
-        srcset=""
-      />
-      {/* <Content /> */}
-      {/* <Content /> */}
+    <div className="relative h-[280px] transition-all xxs:h-auto">
+      <div className="absolute right-0 z-[2] h-full w-[246px] bg-gradient-to-l from-black to-transparent shadow-md sm:w-[45%]"></div>
+
+      <div
+        className={`relative w-full`}
+        style={{
+          height: `${width <= 400 ? 280 : (width / 1349) * 756}px`,
+        }}
+      >
+        <Image
+          src={homeURL.banner}
+          alt="home-banner"
+          loading="eager"
+          priority={true}
+          placeholder="blur"
+          blurDataURL={homeURL.bannerBlur}
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+
+      <BannerContent />
     </div>
   );
 }

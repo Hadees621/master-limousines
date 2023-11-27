@@ -3,7 +3,7 @@ import React from "react";
 function Polygon({ isActive = false, top }) {
   return (
     <div
-      className={`3xxlg:h-[47px] 2xxlg:h-[43px] relative h-[32px]  w-[60px] xxlg:h-[38px]`}
+      className={`relative 3xxlg:h-[34px] xxlg:h-[24px]  2lg:h-[22px] smMd:h-[18px] sm:h-[14px]  xs:h-[11.5px] h-[10px] `}
       style={{ top: `-${top}px` }}
     >
       <svg
@@ -26,15 +26,12 @@ function Polygon({ isActive = false, top }) {
 function Polygons({ active, classes }) {
   const polygons = new Array(20).fill(null);
   return (
-    <div
-      className={`absolute right-5 top-[35%] flex translate-y-[-19%] flex-col ${classes}`}
-    >
+    <div className={classes}>
       {polygons.map((_, idx) => {
         return (
           <Polygon
             key={idx}
-            top={idx === 0 ? 0 : idx * 11}
-            size={20}
+            top={idx === 0 ? 0 : idx * 3}
             isActive={idx <= active ? true : false}
           />
         );

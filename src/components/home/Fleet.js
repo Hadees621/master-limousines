@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import { image_urls } from "@/util";
 import { FLEET } from "@/util/para";
 import * as fonts from "@/util/fonts";
+import { homeURL } from "@/util/urls";
 import { RightArrow } from "@/assets/icons";
+import Image from "next/legacy/image";
 
 function Fleet() {
   const Archivo = fonts.archivo300;
@@ -22,15 +23,19 @@ function Fleet() {
   const sliderThumbnail = `group relative inline-block xxlg:h-[600px] h-[400px] xxlg:w-[350px] w-56  transition-all duration-700 ease-out xxlg:hover:w-[450px] hover:w-80 `;
   const rowPara = `w-auto text-center xxlg:text-base text-xs leading-[1.1] text-[#e7e2e2] sm:w-[80%] md:w-1/2 ${Archivo}`;
   const rowHeading = `text-[40px] text-white sm:text-[60px]  md:w-1/2 md:text-[80px] ${LeagureSpartan}`;
-  const lastRow = `xxlg:text-base text-xs tracking-[10px] text-white sm:text-sm ${Montserrat}`;
+  const lastRow = `xxlg:text-base text-xs xxs:tracking-[10px] tracking-[5px] text-white sm:text-sm ${Montserrat}`;
 
   const Thumbnail = ({ idx, bottomText }) => {
     const utils = `absolute bottom-1 left-2 xxlg:text-base text-sm tracking-[8px] text-white ${Montserrat}`;
     return (
       <>
-        <img
-          src={image_urls.fleet_sldier[`slider${idx + 1}`]}
+        <Image
+          src={homeURL[`fleet${idx + 1}`]}
           alt=""
+          layout="fill"
+          objectFit="cover"
+          blurDataURL={homeURL[`fleet${idx + 1}Blur`]}
+          objectPosition="top"
           className="h-full w-full object-cover object-top"
         />
         <h1 class={utils}>{bottomText}</h1>
@@ -51,7 +56,7 @@ function Fleet() {
         {slider.map((_, idx) => {
           return (
             <div key={idx} class={sliderThumbnail}>
-              <div class="absolute h-full w-full bg-gradient-to-b from-blue-400 via-transparent to-transparent"></div>
+              <div class="absolute h-full w-full bg-gradient-to-b from-blue-400 z-[1] via-transparent to-transparent "></div>
               <Thumbnail idx={idx} {..._} />
             </div>
           );
@@ -59,7 +64,7 @@ function Fleet() {
       </div>
 
       {/* the row */}
-      <div class="flex items-center justify-end px-5">
+      <div class="flex items-center xxs:justify-end justify-between px-5">
         <h1 className={lastRow}>VIEW ENTIRE FLEET</h1>
         <RightArrow width={20} height={20} />
       </div>

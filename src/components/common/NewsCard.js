@@ -1,17 +1,23 @@
 import { limitAndConcat } from "@/util";
+import { homeURL } from "@/util/urls";
+import Image from "next/legacy/image";
 
 /* eslint-disable @next/next/no-img-element */
-const NewsCard = ({ src, title, desc, time, width = false }) => {
+const NewsCard = ({ idx, title, desc, time, width = false }) => {
   const container = `mr-5 inline-block xxlg:h-[480px] h-[380px] flex-col whitespace-normal bg-black  ${
     width ? "xxlg:w-[450px] w-[330px]" : ""
   }`;
   return (
     <div className={container}>
-      <div class="h-[55%] w-full">
-        <img
-          src={src}
+      <div class="h-[55%] w-full relative">
+        <Image
+          src={`${homeURL[`news${idx + 1}`]}`}
           alt={title}
-          className="h-full w-full object-cover object-center grayscale filter"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+          className="grayscale filter"
+          blurDataURL={`${homeURL[`news${idx + 1}`]}Blur`}
         />
       </div>
       <div class="flex flex-col border-l-2  border-l-[#A72211]  px-3">

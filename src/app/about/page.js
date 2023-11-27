@@ -1,17 +1,16 @@
-import React from 'react'
-import { Footer, Navbar } from '@/components/common';
-import Banner from './components/Banner';
-import Middle from './components/Middle';
-import Customers from './components/Customers';
+import React from "react";
+import Banner from "@/components/about/Banner";
+import Customers from "@/components/about/Customers";
+import Middle from "@/components/about/Middle";
+
 function About() {
   return (
     <>
       <Banner />
       <Middle />
       <Customers />
-      <Footer />
     </>
-  )
+  );
 }
 
-export default About
+export default About;
