@@ -43,7 +43,7 @@ function Estd() {
         objectFit="cover"
         className="blur-sm xxs:blur-0"
       />
-      <div class="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center ">
+      <div className="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center ">
         {/* Cards Container  */}
         <div className="flex flex-wrap px-8 xxs:px-0">
           {cards.map((card, idx) => {

@@ -9,7 +9,7 @@ function Header({ title, activeTab, onClick }) {
         <h1
           className={`flex items-center justify-between text-center  text-xs tracking-[5px]   text-white  sm:text-base md:tracking-[10px] ${montserrat400} uppercase `}
         >
-          <div class="h-[13px] w-[18px] rounded-full border-2 bg-transparent xxs:mr-6 xxs:h-[15px] xxs:w-[15px] sm:mr-6 sm:h-[20px] sm:w-[20px]"></div>
+          <div className="h-[13px] w-[18px] rounded-full border-2 bg-transparent xxs:mr-6 xxs:h-[15px] xxs:w-[15px] sm:mr-6 sm:h-[20px] sm:w-[20px]"></div>
           {title}
         </h1>
       </div>

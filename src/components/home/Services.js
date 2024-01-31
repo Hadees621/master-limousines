@@ -26,7 +26,7 @@ function Services() {
       />
 
       {/* content  */}
-      <div class="absolute left-0 top-0  flex flex-col items-center justify-center px-5 py-10 xs:p-10 xs:px-20 slg:items-start" data-aos="fade-right">
+      <div className="absolute left-0 top-0  flex flex-col items-center justify-center px-5 py-10 xs:p-10 xs:px-20 slg:items-start" data-aos="fade-right">
         <h1 className={heading}>Our Services</h1>
         <p className={para}>
           Masterpiece Limousine provides luxury, affordable limo services in San
@@ -57,8 +57,8 @@ function Services() {
       </div>
 
       {/* mobile version content  */}
-      <div class="abolute left-0 top-0 z-50 flex h-full w-full justify-center slg:hidden">
-        <div class="absolute smMd:bottom-32 sm:bottom-24 xs:bottom-36 bottom-28 grid w-[100%] gap-0  xxs:grid-cols-2  sm:grid-cols-3 slg:bottom-10 smMd:grid-cols-4 xxs:px-0 px-6">
+      <div className="abolute left-0 top-0 z-50 flex h-full w-full justify-center slg:hidden">
+        <div className="absolute smMd:bottom-32 sm:bottom-24 xs:bottom-36 bottom-28 grid w-[100%] gap-0  xxs:grid-cols-2  sm:grid-cols-3 slg:bottom-10 smMd:grid-cols-4 xxs:px-0 px-6">
           <ServiceCardMobile {...ServiceContent.graduation} />
           <ServiceCardMobile {...ServiceContent.airportTransfer} />
           <ServiceCardMobile {...ServiceContent.casinos} />
@@ -72,11 +72,11 @@ function Services() {
 
       {/* last row  */}
       <div className="flex w-full absolute 2xxlg:bottom-20 xl:bottom-5 bottom-10 items-center justify-end sm:px-20 px-5">
-        <h1
-          class={`mx-2 sm:text-lg text-sm uppercase tracking-[10px] text-[#a9a8a7] ${Montserrat}`}
+        <a href="/services"
+          className={`mx-2 sm:text-lg text-sm uppercase tracking-[10px] text-[#a9a8a7] ${Montserrat}`}
         >
           VIEW ALL SERVICES
-        </h1>
+        </a>
         <RightArrow width={24} height={24} />
       </div>
     </div>

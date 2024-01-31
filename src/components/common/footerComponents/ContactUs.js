@@ -1,4 +1,6 @@
 import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const ContactUs = () => {
     return (
@@ -18,6 +20,20 @@ const ContactUs = () => {
                 <p className="font-Archivo text-[15px] font-[300] leading-[32.8px] text-[rgba(255,255,255,0.75)] pl-6">
                     Contact Us
                 </p>
+            </div>
+            <div
+                className="flex items-center justify-center lg:justify-start 2xl:justify-center"
+                style={{ marginTop: "1rem" }}
+            >
+                <Link href="https://www.bbb.org/us/ca/san-diego/profile/limo-service/masterpiece-limousine-1126-31002665/#sealclick" id="bbblink" className="ruvtbul" target="_blank" rel="nofollow">
+                    <Image 
+                        src={"https://seal-central-northern-western-arizona.bbb.org/logo/ruvtbul/bbb-31002665.png"}
+                        alt="Masterpiece Limousine BBB Business Review"
+                        width={150}
+                        height={50}
+                        style={{border: 0}}
+                    />
+                </Link>
             </div>
         </div>
 

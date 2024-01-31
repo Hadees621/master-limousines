@@ -23,7 +23,7 @@ function Home() {
         />
       </div>
 
-      <div class="relative">
+      <div className="relative">
         <CustomerService />
         <Polygons
           active={6}
@@ -32,12 +32,12 @@ function Home() {
       </div>
 
       {/* The Fleet Section  */}
-      <div class="relative mb-10 mt-[229px] sm:mt-1">
+      <div className="relative mb-10 mt-[229px] sm:mt-1">
         <Fleet />
       </div>
 
       {/* The Customer Base Section  */}
-      <div class="">
+      <div className="">
         <CustomerBase />
       </div>
 
@@ -51,7 +51,7 @@ function Home() {
       </div>
 
       {/* The Latest News Section  */}
-      <div class="relative mt-32">
+      <div className="relative mt-32">
         <LatestNews />
         <Polygons
           active={13}

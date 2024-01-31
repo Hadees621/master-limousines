@@ -34,7 +34,7 @@ function CustomerBase() {
       </div>
 
       <div className="mt-3 flex items-center justify-center">
-        <h1 class={secondaryHeading}>View All</h1>
+        <h1 className={secondaryHeading}>View All</h1>
         <RightArrow width={24} height={24} />
       </div>
     </div>

@@ -28,7 +28,7 @@ function LatestNews() {
         <NavArrows />
       </div>
 
-      <div class="no-scrollbar my-10 mb-32 ml-2 overflow-scroll whitespace-nowrap lg:w-[81%]">
+      <div className="no-scrollbar my-10 mb-32 ml-2 overflow-scroll whitespace-nowrap lg:w-[81%]">
         {News.map((_, idx) => {
           return <NewsCard key={idx} {..._} idx={idx} width={true} />;
         })}

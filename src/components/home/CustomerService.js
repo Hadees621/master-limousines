@@ -41,11 +41,11 @@ function CustomerService() {
           classes={`absolute 2lg:right-4 sm:right-5 xxs:right-3 right-1  3xxlg:top-[50%] xl:top-[53%] 2lg:top-[58%] smMd:top-[60%] sm:top-[61%] xs:top-[65%] top-[68%] translate-y-[-50%] z-[2]  flex flex-col`}
         />
       </div>
-      <div class=" relative top-[200px] -z-10 w-full smMd:top-[47px] 2lg:-top-[200px]  xl:-top-[280px]  xxlg:-top-[338px]">
+      <div className=" relative top-[200px] -z-10 w-full smMd:top-[47px] 2lg:-top-[200px]  xl:-top-[280px]  xxlg:-top-[338px]">
         <img
           src="/images/service_banner.png"
           alt=""
-          srcset=""
+          srcSet=""
           className="h-full w-full object-cover"
         />
         <div className="absolute -top-[20rem] left-0 w-[90%] px-5 xxs:-top-[18rem] xxs:ps-16 sm:-top-44 smMd:-top-10 smMd:w-[560px] 2lg:top-[40%] xxlg:w-[813px]" data-aos="fade-up">

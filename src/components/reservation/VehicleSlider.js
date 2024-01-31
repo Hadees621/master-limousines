@@ -19,7 +19,7 @@ function VehicelCard({ name, src, passenger, luggage }) {
         </div>
       </div>
       <div className="absolute left-[-20%] top-[50%] max-h-full  w-[470px] translate-y-[-50%] bg-transparent bg-opacity-60 object-cover">
-        <img src={src} alt="" srcset="" className="h-[100%] w-[100%]" />
+        <img src={src} alt="" srcSet="" className="h-[100%] w-[100%]" />
       </div>
       <div className=" flex justify-between px-2">
         <button
@@ -60,7 +60,7 @@ function VehicleSlider() {
   ];
   return (
     <div className="absolute left-0 top-[55%]  flex w-full  translate-y-[-55%] items-center justify-center ">
-      <div class="no-scrollbar h-full  w-[100%] overflow-scroll whitespace-nowrap ">
+      <div className="no-scrollbar h-full  w-[100%] overflow-scroll whitespace-nowrap ">
         {vehicles.map((vehicle, idx) => {
           return <VehicelCard key={idx} {...vehicle} />;
         })}

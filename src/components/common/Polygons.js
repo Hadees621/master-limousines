@@ -16,7 +16,7 @@ function Polygon({ isActive = false, top }) {
         <path
           d="M1.98951 33.4035L2.2165 15.7134L20.0104 2.06961L19.7835 19.7597L1.98951 33.4035Z"
           stroke="#2189B7"
-          stroke-width="2"
+          strokeWidth="2"
         />
       </svg>
     </div>

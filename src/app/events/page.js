@@ -15,7 +15,7 @@ function HeadingRow() {
   const heading = `text-4xl uppercase text-white sm:text-6xl md:text-7xl ${leagueSpartan700}`;
   const para = `text-[15px] text-white sm:mt-2 sm:text-[27px] md:text-[29px] ${libre400}`;
   return (
-    <div class=" top-0 flex sm:h-[400px] h-[250px] w-full flex-col items-center sm:justify-center justify-end sm:mb-0 mb-10  md:justify-start md:pt-56">
+    <div className=" top-0 flex sm:h-[400px] h-[250px] w-full flex-col items-center sm:justify-center justify-end sm:mb-0 mb-10  md:justify-start md:pt-56">
       <h1 className={heading}>the latest</h1>
       <p className={para}>Masterpiece Limousines in action.</p>
     </div>
@@ -60,7 +60,7 @@ function Posts() {
       >
         top posts
       </p>
-      <div class="mt-10">
+      <div className="mt-10">
         {content.map((_, idx) => (
           <Row key={idx} idx={idx} />
         ))}
@@ -126,7 +126,7 @@ const NewsCard = ({ idx, title, desc, time, width = false }) => {
   }`;
   return (
     <div className={container}>
-      <div class="relative h-[180px] w-full xs:h-[300px]">
+      <div className="relative h-[180px] w-full xs:h-[300px]">
         <Image
           src={homeURL.news1}
           alt={title}
@@ -137,7 +137,7 @@ const NewsCard = ({ idx, title, desc, time, width = false }) => {
           blurDataURL={`${homeURL[`news${idx + 1}`]}Blur`}
         />
       </div>
-      <div class="flex flex-col border-l-2  border-l-[#A72211]  px-3">
+      <div className="flex flex-col border-l-2  border-l-[#A72211]  px-3">
         <h1 className="py-2 text-center  text-white xxlg:text-[22px]">
           {title}
         </h1>
@@ -167,7 +167,7 @@ function Events() {
 
       <div className=" mb-32 flex w-full max-w-[2000px] flex-col   gap-5   px-3 xs:px-10 sm:px-32 smMd:flex-row smMd:px-5">
         {/* left corner  */}
-        <div class="  mt-5 smMd:w-1/3 xl:w-1/4">
+        <div className="  mt-5 smMd:w-1/3 xl:w-1/4">
           <Search />
           <Posts />
           <AllTime />
@@ -175,7 +175,7 @@ function Events() {
 
         {/* right corner  */}
         <div
-          class=" xs:grid smMd:w-[70%] xl:w-[75%]"
+          className=" xs:grid smMd:w-[70%] xl:w-[75%]"
           style={{ ...newsContainer }}
         >
           {News.map((_, idx) => {

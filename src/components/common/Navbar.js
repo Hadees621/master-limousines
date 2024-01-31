@@ -81,13 +81,16 @@ export default function Navbar() {
   return (
     <div className="absolute z-10 flex w-full items-center justify-between px-2 py-3 xxs:px-4 sm:px-5 sm:py-5 md:py-7 xxlg:px-7 ">
       <SideMenu />
-      <div className="">
+      <Link className="cursor-pointer"
+        href="/"
+        onClick={() => setMenu(false)}
+      >
         <img
           src={NavURLs.logo}
           alt="Logo"
           className="w-[128px] xxs:w-40 sm:w-44 xxlg:w-64"
         />
-      </div>
+      </Link>
       <div className="flex w-auto justify-end lg:w-[70%] xxlg:w-[75%]">
         <NavLinks />
       </div>

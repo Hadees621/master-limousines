@@ -19,7 +19,7 @@ const TestomonialCard = ({ src, text, name }) => {
       style={{ ...style }}
       data-aos="zoom-in-up">
       <div className="relative flex items-end justify-between">
-        <div class="h-16 w-16 overflow-hidden rounded-full bg-white transition-all xxlg:h-28 xxlg:w-32"></div>
+        <div className="h-16 w-16 overflow-hidden rounded-full bg-white transition-all xxlg:h-28 xxlg:w-32"></div>
 
         <div className="h-[1px] w-[80%] bg-white transition-all xxlg:h-[4px] xxlg:w-[90%]"></div>
         <div className="absolute right-0 mb-3">
@@ -81,7 +81,7 @@ function HomeContact() {
           <NavArrows />
         </div>
 
-        <div class="no-scrollbar my-10 mb-32 ml-2 overflow-scroll whitespace-nowrap lg:w-[81%]">
+        <div className="no-scrollbar my-10 mb-32 ml-2 overflow-scroll whitespace-nowrap lg:w-[81%]">
           {News.map((_, idx) => {
             return <TestomonialCard key={idx} {..._} />;
           })}
@@ -97,11 +97,11 @@ function HomeContact() {
           style={gradient}
         >
           <div className="absolute bottom-0 left-0 h-[300px]  w-[100%] xs:bottom-10  sm:-top-32  sm:h-[400px] sm:w-[65%]  md:h-[600px] 2xxlg:w-[70%]">
-            <div class="relative h-full w-full" data-aos="fade-right">
+            <div className="relative h-full w-full" data-aos="fade-right">
               <img
                 src={homeURL.limo}
                 alt=""
-                srcset=""
+                srcSet=""
                 className="absolute left-0 top-16 mt-0 w-[450px] transition-all smMd:w-[500px] lg:mt-5 lg:w-[550px] xl:top-5 xxlg:-mt-3 xxlg:w-[700px]"
               />
             </div>
@@ -127,7 +127,7 @@ function HomeContact() {
             >
               Name:
             </p>
-            <input type="text" className="w-full border-b bg-transparent" />
+            <input type="text" className="w-full border-b bg-transparent text-white outline-none" />
           </div>
           <div className="flex">
             <p
@@ -135,7 +135,7 @@ function HomeContact() {
             >
               Email:
             </p>
-            <input type="text" className="w-full border-b bg-transparent" />
+            <input type="text" className="w-full border-b bg-transparent text-white outline-none" />
           </div>
 
           <div className="flex flex-col">
@@ -145,7 +145,7 @@ function HomeContact() {
               id=""
               cols="30"
               rows="4"
-              className="border-b bg-transparent"
+              className="border-b bg-transparent text-white outline-none"
             ></textarea>
           </div>
           <button

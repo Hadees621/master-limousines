@@ -13,7 +13,7 @@ export const RightArrow = ({ width = 39, height = 39 }) => {
         x2="37.4766"
         y2="18.3848"
         stroke="white"
-        stroke-width="2"
+        strokeWidth="2"
       />
       <line
         x1="37.4765"
@@ -21,7 +21,7 @@ export const RightArrow = ({ width = 39, height = 39 }) => {
         x2="18.3847"
         y2="0.707265"
         stroke="white"
-        stroke-width="2"
+        strokeWidth="2"
       />
     </svg>
   );
@@ -56,7 +56,7 @@ export const SearchIcon = ({ width = 30, height = 30 }) => {
         stroke="white"
         stroke-linecap="round"
         stroke-linejoin="round"
-        stroke-width="2"
+        strokeWidth="2"
         d="m5 27l7.5-7.5M28 13a9 9 0 1 1-18 0a9 9 0 0 1 18 0Z"
       />
     </svg>
@@ -242,13 +242,13 @@ export const Tours = ({ color = "#bababa" }) => {
               fill="#fff"
               stroke="#fff"
               stroke-linejoin="round"
-              stroke-width="4"
+              strokeWidth="4"
               d="M9 23h30v11a2 2 0 0 1-2 2H11a2 2 0 0 1-2-2V23Z"
             />
             <path
               stroke="#fff"
               stroke-linejoin="round"
-              stroke-width="4"
+              strokeWidth="4"
               d="M9 8a2 2 0 0 1 2-2h26a2 2 0 0 1 2 2v15H9V8Z"
             />
             <path
@@ -256,13 +256,13 @@ export const Tours = ({ color = "#bababa" }) => {
               stroke="#fff"
               stroke-linecap="round"
               stroke-linejoin="round"
-              stroke-width="4"
+              strokeWidth="4"
               d="M15 42a3 3 0 0 1-3-3v-3h6v3a3 3 0 0 1-3 3Zm18 0a3 3 0 0 1-3-3v-3h6v3a3 3 0 0 1-3 3Z"
             />
             <path
               stroke="#fff"
               stroke-linecap="round"
-              stroke-width="4"
+              strokeWidth="4"
               d="M6 12v4m36-4v4"
             />
             <circle cx="15" cy="30" r="2" fill="#000" />
@@ -270,7 +270,7 @@ export const Tours = ({ color = "#bababa" }) => {
             <path
               stroke="#fff"
               stroke-linecap="round"
-              stroke-width="4"
+              strokeWidth="4"
               d="m31 6l-9 10m16-9l-5 6"
             />
           </g>

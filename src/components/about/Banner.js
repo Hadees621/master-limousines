@@ -43,7 +43,7 @@ const Banner = () => {
                 x2="19.799"
                 y2="20.3849"
                 stroke="white"
-                stroke-width="2"
+                strokeWidth="2"
               />
               <line
                 x1="18.3847"
@@ -51,7 +51,7 @@ const Banner = () => {
                 x2="37.4766"
                 y2="1.2929"
                 stroke="white"
-                stroke-width="2"
+                strokeWidth="2"
               />
             </svg>
           </div>

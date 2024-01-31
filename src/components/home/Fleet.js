@@ -38,7 +38,7 @@ function Fleet() {
           objectPosition="top"
           className="h-full w-full object-cover object-top"
         />
-        <h1 class={utils}>{bottomText}</h1>
+        <h1 className={utils}>{bottomText}</h1>
       </>
     );
   };
@@ -52,11 +52,11 @@ function Fleet() {
       </div>
 
       {/* the slider  */}
-      <div class="no-scrollbar mb-4 w-auto overflow-scroll whitespace-nowrap">
+      <div className="no-scrollbar mb-4 w-auto overflow-scroll whitespace-nowrap">
         {slider.map((_, idx) => {
           return (
-            <div key={idx} class={sliderThumbnail}>
-              <div class="absolute h-full w-full bg-gradient-to-b from-blue-400 z-[1] via-transparent to-transparent "></div>
+            <div key={idx} className={sliderThumbnail}>
+              <div className="absolute h-full w-full bg-gradient-to-b from-blue-400 z-[1] via-transparent to-transparent "></div>
               <Thumbnail idx={idx} {..._} />
             </div>
           );
@@ -64,7 +64,7 @@ function Fleet() {
       </div>
 
       {/* the row */}
-      <div class="flex items-center xxs:justify-end justify-between px-5">
+      <div className="flex items-center xxs:justify-end justify-between px-5">
         <h1 className={lastRow}>VIEW ENTIRE FLEET</h1>
         <RightArrow width={20} height={20} />
       </div>
