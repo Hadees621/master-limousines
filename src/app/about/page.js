@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import Banner from "@/components/about/Banner";
+import Customers from "@/components/about/Customers";
+import Middle from "@/components/about/Middle";
 
 function About() {
   return (
-    <h1>About Us Page</h1>
-  )
+    <>
+      <Banner />
+      <Middle />
+      <Customers />
+    </>
+  );
 }
 
-export default About
+export default About;

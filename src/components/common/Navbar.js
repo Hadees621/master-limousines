@@ -1,120 +1,116 @@
-// import React from 'react';
-// import { useState } from 'react';
+/* eslint-disable @next/next/no-img-element */
+"use client";
 
-// const Navbar = () => {
-//   const [mobileTabsVisible, setMobileTabsVisible] = useState(false);
+import Link from "next/link";
+import { useState } from "react";
+import * as fonts from "@/util/fonts";
+import { usePathname } from "next/navigation";
+import { Rotate as Hamburger } from "hamburger-react";
+import { NavURLs } from "@/util/urls";
+import Image from "next/legacy/image";
 
-//   const toggleMobileTabs = () => {
-//     setMobileTabsVisible(!mobileTabsVisible);
-//   };
+const NavLink = ({ name, href, horizontal, handler }) => {
+  const activeRoute = usePathname();
+  const isActive = activeRoute === href || false;
+  return (
+    <li
+      key={name}
+      className={`mx-5 ${
+        !horizontal && "my-3"
+      }  cursor-pointer border-b-2  pb-2 text-white  transition-all  hover:border-active_navbar  ${
+        isActive ? "border-active_navbar" : "border-[transparent]"
+      }`}
+    >
+      <Link href={href}>
+        <h6
+          className={`text-[20px] tracking-[1.5px] lg:text-[12px] xxlg:text-[18px]  ${fonts.montserrat500}`}
+          href={href}
+          onClick={() => (horizontal ? undefined : handler(false))}
+        >
+          {name}
+        </h6>
+      </Link>
+    </li>
+  );
+};
 
-//   return (
-//     <nav className="bg-blue-500 p-4">
-//       <div className="container mx-auto flex justify-between items-center">
-//         <div className="flex items-center">
-//           <img src="your-logo.png" alt="Logo" className="h-8 w-8 mr-2" />
-//           <div className="hidden md:flex space-x-4">
-//             <a href="#" className="text-white hover:text-gray-300">
-//               Tab 1
-//             </a>
-//             <a href="#" className="text-white hover:text-gray-300">
-//               Tab 2
-//             </a>
-//             <a href="#" className="text-white hover:text-gray-300">
-//               Tab 3
-//             </a>
-//             <a href="#" className="text-white hover:text-gray-300">
-//               Tab 4
-//             </a>
-//             <a href="#" className="text-white hover:text-gray-300">
-//               Tab 5
-//             </a>
-//           </div>
-//         </div>
-//         <div className="md:hidden">
-//           <button
-//             className="text-white"
-//             onClick={toggleMobileTabs}
-//           >
-//             <svg
-//               xmlns="http://www.w3.org/2000/svg"
-//               className="h-6 w-6"
-//               fill="none"
-//               viewBox="0 0 24 24"
-//               stroke="currentColor"
-//             >
-//               <path
-//                 stroke-linecap="round"
-//                 stroke-linejoin="round"
-//                 stroke-width="2"
-//                 d="M4 6h16M4 12h16M4 18h16"
-//               />
-//             </svg>
-//           </button>
-//         </div>
-//         <a
-//           href="#"
-//           className="hidden md:block bg-white text-blue-500 px-4 py-2 rounded-lg hover:bg-blue-100"
-//         >
-//           Button
-//         </a>
-//       </div>
-//       {mobileTabsVisible && (
-//         <div className="md:hidden bg-blue-500 p-4">
-//           <a href="#" className="block text-white hover:text-gray-300">
-//             Tab 1
-//           </a>
-//           <a href="#" className="block text-white hover:text-gray-300">
-//             Tab 2
-//           </a>
-//           <a href="#" className="block text-white hover:text-gray-300">
-//             Tab 3
-//           </a>
-//           <a href="#" className="block text-white hover:text-gray-300">
-//             Tab 4
-//           </a>
-//           <a href="#" className="block text-white hover:text-gray-300">
-//             Tab 5
-//           </a>
-//         </div>
-//       )}
-//     </nav>
-//   );
-// };
+function NavLinks({ horizontal = true, handler }) {
+  const routes = [
+    { name: "HOME", href: "/" },
+    { name: "SERVICES", href: "/services" },
+    { name: "EVENTS", href: "/events" },
+    { name: "OUR FLEET", href: "/ourfleet" },
+    { name: "ABOUT US", href: "/about" },
+    { name: "CONTACT US", href: "/." },
+  ];
 
-// export default Navbar;
+  const containerClasses = horizontal
+    ? "mt-[20px] hidden w-[700px] justify-end lg:flex xxlg:w-auto"
+    : "mt-[20px] flex h-full w-full flex-col items-center justify-center";
+  return (
+    <ul className={containerClasses}>
+      {routes.map((route) => {
+        return (
+          <NavLink
+            key={route.name}
+            {...route}
+            horizontal={horizontal}
+            handler={handler}
+          />
+        );
+      })}
+    </ul>
+  );
+}
 
-// // import Image from 'next/image'
+export default function Navbar() {
+  const [menu, setMenu] = useState(false);
 
-// // export default function Navbar() {
-// //   return (
+  function SideMenu() {
+    return (
+      <div
+        className={`fixed left-0 top-0 z-[10] h-screen w-screen bg-black transition-all ${
+          menu ? "visible opacity-95" : "hidden opacity-0"
+        }`}
+      >
+        <NavLinks horizontal={false} handler={setMenu} />
+      </div>
+    );
+  }
 
-// //     <div class="bg-blue-500 p-4">
-// //       <div class="container mx-auto flex justify-between items-center">
-// //         <div class="flex items-center">
-// //           <img src="your-logo.png" alt="Logo" class="h-8 w-8 mr-2"/>
-
-// //             <div class="hidden md:flex space-x-4">
-// //               <a href="#" class="text-white hover:text-gray-300">Tab 1</a>
-// //               <a href="#" class="text-white hover:text-gray-300">Tab 2</a>
-// //               <a href="#" class="text-white hover:text-gray-300">Tab 3</a>
-// //               <a href="#" class="text-white hover:text-gray-300">Tab 4</a>
-// //               <a href="#" class="text-white hover:text-gray-300">Tab 5</a>
-// //             </div>
-// //         </div>
-
-// //         <div class="md:hidden">
-// //           <button class="text-white">
-// //             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-// //               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-// //             </svg>
-// //           </button>
-// //         </div>
-
-// //         <a href="#" class="hidden md:block bg-white text-blue-500 px-4 py-2 rounded-lg hover:bg-blue-100">Button</a>
-// //       </div>
-// //     </div>
-
-
-// //   )
-// // }
+  return (
+    <div className="absolute z-10 flex w-full items-center justify-between px-2 py-3 xxs:px-4 sm:px-5 sm:py-5 md:py-7 xxlg:px-7 ">
+      <SideMenu />
+      <div className="">
+        <img
+          src={NavURLs.logo}
+          alt="Logo"
+          className="w-[128px] xxs:w-40 sm:w-44 xxlg:w-64"
+        />
+      </div>
+      <div className="flex w-auto justify-end lg:w-[70%] xxlg:w-[75%]">
+        <NavLinks />
+      </div>
+      <div className="">
+        <button
+          className={`hidden bg-crimson px-4 py-[15px] text-xs uppercase  text-white lg:block xxlg:px-8 xxlg:py-[20px] xxlg:text-base ${fonts.montserrat600}`}
+        >
+          <Link href="/reservation"> Reservations</Link>
+        </button>
+      </div>
+      <div className="absolute right-0 z-50 block outline-none lg:hidden">
+        <Hamburger
+          id="hamburger"
+          color="white"
+          toggled={!menu ? false : true}
+          size={30}
+          distance="sm"
+          easing="ease-in"
+          hideOutline={true}
+          rounded
+          onToggle={() => setMenu(!menu)}
+        ></Hamburger>
+      </div>
+    </div>
+  );
+}
