@@ -24,10 +24,11 @@ function BannerContent() {
         <h1
           className={`p-0 text-end text-[7px] leading-[1.1] text-[#e9dede] sm:pl-3 sm:text-[10px] smMd:text-[12px] 2lg:text-[13px] 2xxlg:text-[21px] ${archivo300}`}
         >
-          Offering luxury transportation options for any occasion. We have a
-          vehicle to fit your needs, from stylish limousines to spacious party
-          buses. Our professional chauffeurs have local knowledge and provide
-          top-notch service to make your experience unforgettable.
+          San Diego Limousine Services offers luxury transportation options for
+          any occasion. We have a vehicle to fit your needs, from stylish
+          limousines to spacious party buses. Our professional chauffeurs have
+          local knowledge and provide top-notch service to make your experience
+          unforgettable
         </h1>
 
         <p

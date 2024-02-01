@@ -21,7 +21,7 @@ function Services() {
         layout="fill"
         objectFit="cover"
         alt="Services"
-        className="-z-10 xs:blur-0 blur-sm"
+        className="-z-10 blur-sm xs:blur-0"
         blurDataURL={homeURL.serviceMainBannerBlur}
       />
 
@@ -32,7 +32,8 @@ function Services() {
           Masterpiece Limousine provides luxury, affordable limo services in San
           Diego and nearby areas. Our team of courteous, professional staff,
           including drivers and booking agents, prioritize your needs. Choose us
-          for top-notch limo rental services in San Diego.
+          for top-notch limo rental services in San Diego.See our popular
+          services below.
         </p>
       </div>
 
@@ -58,7 +59,7 @@ function Services() {
 
       {/* mobile version content  */}
       <div class="abolute left-0 top-0 z-50 flex h-full w-full justify-center slg:hidden">
-        <div class="absolute smMd:bottom-32 sm:bottom-24 xs:bottom-36 bottom-28 grid w-[100%] gap-0  xxs:grid-cols-2  sm:grid-cols-3 slg:bottom-10 smMd:grid-cols-4 xxs:px-0 px-6">
+        <div class="absolute bottom-28 grid w-[100%] gap-0 px-6 xxs:grid-cols-2 xxs:px-0  xs:bottom-36  sm:bottom-24 sm:grid-cols-3 smMd:bottom-32 smMd:grid-cols-4 slg:bottom-10">
           <ServiceCardMobile {...ServiceContent.graduation} />
           <ServiceCardMobile {...ServiceContent.airportTransfer} />
           <ServiceCardMobile {...ServiceContent.casinos} />
@@ -71,9 +72,9 @@ function Services() {
       </div>
 
       {/* last row  */}
-      <div className="flex w-full absolute 2xxlg:bottom-20 xl:bottom-5 bottom-10 items-center justify-end sm:px-20 px-5">
+      <div className="absolute bottom-10 flex w-full items-center justify-end px-5 sm:px-20 xl:bottom-5 2xxlg:bottom-20">
         <h1
-          class={`mx-2 sm:text-lg text-sm uppercase tracking-[10px] text-[#a9a8a7] ${Montserrat}`}
+          class={`mx-2 text-sm uppercase tracking-[10px] text-[#a9a8a7] sm:text-lg ${Montserrat}`}
         >
           VIEW ALL SERVICES
         </h1>
